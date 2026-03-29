@@ -1,0 +1,71 @@
+.menu-btn {
+  padding: 0 12px;
+}
+.menu-btn:hover {
+  border: 1px solid #ffffff;
+}
+
+.menu-card {
+  padding: 15px;
+  width: 100%;
+  min-height: 360px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  h6 {
+    font-size: 20px;
+    color: #333333;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+
+.menu-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 260px;
+  gap: 30px;
+  div img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.button.active {
+  background-color: #ffffff;
+  color: #744400;
+}
+
+.menu-tabs {
+  gap: 30px;
+}
+
+.button.tab-btn {
+  width: 265px;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .our-menu {
+    overflow: hidden;
+  }
+  .our-menu .swiper {
+    overflow: visible !important;
+  }
+  .menu-tabs {
+    gap: 20px;
+    flex-wrap: wrap;
+    > button {
+      /* flex: 1; */
+      display: block;
+      width: calc(50% - 10px) !important;
+    }
+  }
+
+  .menu-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 160px;
+    gap: 20px;
+    margin-top: 35px;
+  }
+}

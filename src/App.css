@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.istok-web-regular {
+  font-family: "Istok Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.istok-web-bold {
+  font-family: "Istok Web", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Common CSS */
+
+/* Container */
+.container-box {
+  max-width: 1190px;
+  margin: auto;
+}
+
+.section-margin {
+  margin-top: 100px;
+}
+
+.sub-heading {
+  font-size: 18px;
+  line-height: 26px;
+  color: #666666;
+  margin-bottom: 0;
+  font-family: "Istok Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text-heading {
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 0;
+  font-family: "Istok Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 21px;
+  letter-spacing: 0.2px;
+}
+
+/* Button */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 40px;
+  text-align: center;
+  background-color: #744400;
+  color: #ffffff;
+  border: 1px solid #744400;
+  transition: all 0.3s;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+
+  font-family: "Istok Web", sans-serif;
+  /* font-weight: 700; */
+  font-style: normal;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #744400;
+  }
+}
+
+/* Heading */
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+
+  h4 {
+    font-size: 35px;
+    color: #333333;
+    font-weight: 600;
+    margin-bottom: 16px;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  > .line {
+    height: 3px;
+    border-radius: 2px;
+    background-color: #744400;
+    width: 32px;
+    margin: auto;
+  }
+}
+
+.heading-left {
+  text-align: left;
+  .line {
+    margin: auto;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-box {
+    /* max-width: 0; */
+    width: 88%;
+  }
+
+  .section-margin {
+    margin-top: 60px;
+  }
+
+  .heading {
+    h4 {
+      font-size: 28px;
+    }
+  }
+
+  .heading-left {
+    text-align: center;
+    .line {
+      margin: auto;
+    }
+  }
+
+  #map-location {
+    height: 220px;
+  }
+}

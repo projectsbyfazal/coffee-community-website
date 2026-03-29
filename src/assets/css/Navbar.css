@@ -1,0 +1,71 @@
+.navibar {
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+
+  li a {
+    color: #333333;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+
+    svg {
+      transform: translateY(-3px);
+    }
+
+    &:hover {
+      color: #744400;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navibar {
+    padding: 17px 0;
+  }
+  .navibar .button {
+    display: none;
+  }
+  .navLinks {
+    position: absolute;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: auto;
+    top: 100%;
+    right: 0;
+    left: 0;
+    gap: 20px;
+    padding: 20px;
+    display: none;
+
+    animation: slideDown 0.3s ease forwards;
+  }
+
+  .hamburger-btn {
+    font-size: 30px;
+    display: inline-block;
+    transform: scaleX(1.3);
+    color: #744400;
+  }
+
+  @keyframes slideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

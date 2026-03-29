@@ -1,0 +1,54 @@
+.footer {
+  background-color: #000000;
+  padding-top: 60px;
+  padding-bottom: 12px;
+}
+
+.footer-text {
+  h4 {
+    color: #744400;
+    font-size: 18px;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  a,
+  span {
+    font-family: "Istok Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #bdbdbd;
+    letter-spacing: 0.25px;
+  }
+}
+
+.text-copyright {
+  color: #686868;
+}
+
+
+@media (max-width: 768px) {
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 45px;
+  }
+  .footer-text {
+    margin-top: 30px;
+
+    .footer-links {
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        display: block;
+        width: 95px;
+      }
+    }
+
+    .contact-details {
+      width: 60%;
+    }
+  }
+}
